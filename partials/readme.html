@@ -1,0 +1,109 @@
+<h2 id="angular-morris-chart-build-status-https-travis-ci-org-stewones-angular-morris-chart-svg-https-travis-ci-org-stewones-angular-morris-chart-">angular-morris-chart <a href="https://travis-ci.org/stewones/angular-morris-chart"><img src="https://travis-ci.org/stewones/angular-morris-chart.svg" alt="Build Status"></a></h2>
+<hr>
+<h4 id="for-production">For production</h4>
+<ul>
+<li>install <code>angular-morris-chart</code> by bower or npm running the following command</li>
+</ul>
+<pre><code class="lang-shell">$ bower install angular-morris-chart --save
+or
+$ npm install angular-morris-chart --save
+</code></pre>
+<p>or download <a href="https://raw.githubusercontent.com/stewones/angular-morris-chart/master/src/angular-morris-chart.min.js">here</a></p>
+<ul>
+<li>Append the file <code>angular-morris-chart.min.js</code> to end of your body, after the <code>angular</code> lib, before your project.</li>
+</ul>
+<pre><code class="lang-html">&lt;!--using bower--&gt;
+...
+...
+&lt;script src=&quot;../bower_components/angular-morris-chart/src/angular-morris-chart.min.js&quot;&gt;&lt;/script&gt;
+...
+...
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<pre><code class="lang-html">&lt;!--using npm--&gt;
+...
+...
+&lt;script src=&quot;../node_modules/angular-morris-chart/src/angular-morris-chart.min.js&quot;&gt;&lt;/script&gt;
+...
+...
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<ul>
+<li>add <code>angular.morris-chart</code> as a module dependency of your app</li>
+</ul>
+<pre><code class="lang-js">//adding `angular.morris-chart` as a module dependency
+angular.module(&#39;my.app&#39;, [
+    &#39;angular.morris-chart&#39;
+])
+</code></pre>
+<hr>
+<h3 id="usage">Usage</h3>
+<p>There are four directives based on <code>morris.js</code></p>
+<ul>
+<li><code>bar-chart</code></li>
+<li><code>line-chart</code></li>
+<li><code>donut-chart</code></li>
+<li><code>area-chart</code></li>
+</ul>
+<p>Check out <a href="https://angular-morris-chart.stpa.co">documentation</a> for live examples</p>
+<hr>
+<h3 id="for-development">For development</h3>
+<ul>
+<li>install node and bower on your environment</li>
+<li><p>cd to development folder and clone repo</p>
+<pre><code class="lang-sh">$ git clone https://github.com/stewones/angular-morris-chart
+$ cd angular-morris-chart
+</code></pre>
+</li>
+<li><p>install project dependencies</p>
+</li>
+</ul>
+<pre><code class="lang-sh">$ npm install
+$ bower install
+</code></pre>
+<ul>
+<li>serve with live reload</li>
+</ul>
+<pre><code class="lang-sh">#this serves docs on `http://localhost:3000` with live reload
+$ gulp serve
+</code></pre>
+<ul>
+<li>serve on distribution mode</li>
+</ul>
+<pre><code class="lang-sh">#same above but with minified sources for distribution
+$ gulp serve:dist
+</code></pre>
+<ul>
+<li>build all to distribution</li>
+</ul>
+<pre><code class="lang-sh">#this generates minified src at `src/angular-morris-chart.min.js`, and docs on `dist/doc` folder.
+$ gulp build
+</code></pre>
+<ul>
+<li>tests</li>
+</ul>
+<pre><code class="lang-sh">#run unit test with karma
+$ gulp test
+</code></pre>
+<ul>
+<li>automated tests</li>
+</ul>
+<pre><code class="lang-sh">#unit test with live reload
+$ gulp test:auto
+</code></pre>
+<hr>
+<p><strong>Notes:</strong></p>
+<ul>
+<li><p>To contribute with this project, open an issue, fork the project, do your work, issue <code>gulp build</code> and make a PR on master. To update docs (site) make another PR on gh-pages branche with the content generated in <code>dist/doc</code> folder.</p>
+</li>
+<li><p>Check the tasks located on gulp folder for more details.</p>
+</li>
+<li><p><a href="https://github.com/stewones/angular-morris-chart/releases">Changelog</a></p>
+</li>
+</ul>
+<p>Feel free to open issues if you run into a problem or if you just have suggestions. PR´s are always welcome.</p>
+<hr>
+<h4 id="license">License</h4>
+<p>The <code>angular-morris-chart</code> is open-sourced software licensed under <a href="http://opensource.org/licenses/MIT">MIT</a>.</p>
